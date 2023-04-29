@@ -2,26 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: rgb(32,33,36)
+}
+.menuicon{
+    filter: brightness(0) invert(1);
+
+}
+.menucontainer:hover{
+    background-color: #2F3034;
+}
+.googlebutton{
+    background-color: rgb(48,49,52);
+}
+.googleinput:hover{
+    background-color:  rgb(48,49,52);
+}
+.googleinput{
+    width: 45vw;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.footertext{
+   background-color: rgb(23,23,23)
+   
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.searchedinput{
+    width: 40vw;
+    height: 40px;
+    background-color: rgb(48,49,52);
 }

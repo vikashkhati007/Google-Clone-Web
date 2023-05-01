@@ -1,6 +1,6 @@
 import Image from "next/image";
-import User from "../components/user";
-import SearchHeaderOptions from "../components/searchheaderoptions";
+import User from "./user";
+import SearchHeaderOptions from "./searchheaderoptions";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useRef, useState } from "react";

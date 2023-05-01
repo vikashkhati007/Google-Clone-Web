@@ -7,7 +7,6 @@ const Imagesoption = ({ results }) => {
     <>
     <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10 m-10">
       {items.map((data) => {
-        console.log(data);
         return (
           <div className="imagebox overflow-hidden">
               <a className="hover:underline" href={data.image.contextLink}>

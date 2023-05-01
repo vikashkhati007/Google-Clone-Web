@@ -13,7 +13,7 @@ const HomeBody = () => {
     router.push(`/search?query=${term.trim()}&searchType=`);
   }
 
-  function handleKeyPress(e) {
+  function handleKeyPress(e:any) {
     if (e.key === "Enter") { // execute the searchhandler function when the "Enter" key is pressed
       searchhandler(e);
     }

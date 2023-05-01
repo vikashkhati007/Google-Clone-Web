@@ -1,7 +1,7 @@
 import Link from "next/link"
 import User from "./user"
 import Image from "next/image"
-const Header = (props:any) => {
+const Header = (props) => {
   return (
     <>
       <header>

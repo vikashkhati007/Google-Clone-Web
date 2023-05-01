@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-const Searchoption = (props:any) => {
+const Searchoption = (props) => {
   const router = useRouter();
   return (
     <div className="flex justify-center items-center gap-1">

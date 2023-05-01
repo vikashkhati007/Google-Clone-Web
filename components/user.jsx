@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { useSession, signIn, signOut } from "next-auth/react"
 
-const User = (props:any) => {
+const User = (props) => {
   const {data:session} = useSession();
   if(session){
     return(

@@ -5,7 +5,7 @@ const Header = (props:any) => {
   return (
     <>
       <header>
-        <div className="w-full h-10 text-white flex justify-end items-center gap-5 px-5 my-3 fixed">
+        <div className="w-full h-14 text-white flex justify-end items-center gap-5 px-5 my-3 fixed">
         <Link href={"https://mail.google.com"} className="hover:underline">
         <h3 className="text-sm">Google</h3>
         </Link>

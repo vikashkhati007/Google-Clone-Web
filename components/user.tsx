@@ -10,7 +10,7 @@ const User = (props:any) => {
   }
   return (
     <>
-    <button style={{display:`${props.display}`}} className="border bg-blue-600 p-1 rounded-lg text-sm w-20 font-sans shadow-sm shadow-slate-700 hover:bg-blue-700" onClick={()=>{signIn()}}>Sign-In</button>
+    <button style={{display:`${props.display}`}} className="border bg-blue-600 p-1 rounded-lg text-sm w-20 font-sans shadow-sm shadow-slate-700 hover:bg-blue-700 " onClick={()=>{signIn()}}>Sign-In</button>
     </>
   )
 }

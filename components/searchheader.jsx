@@ -4,6 +4,7 @@ import SearchHeaderOptions from "./searchheaderoptions";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 const SearchHeader = () => {
   const router = useRouter();
@@ -35,6 +36,7 @@ const SearchHeader = () => {
       </Head>
       <header className="relative top-0 mr-38 px-5 h-32 flex items-center searcheader">
         <div className="searched flex justify-around items-center gap-2 ">
+          <Link href={"/"}>
           <Image
             className="relative left-10"
             src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png"
@@ -42,6 +44,7 @@ const SearchHeader = () => {
             height={100}
             alt="googleicon"
           />
+          </Link>
           <div className="inputbox">
             <input
               ref={searchref}

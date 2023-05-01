@@ -8,7 +8,7 @@ const Imagesoption = ({ results }) => {
     <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10 m-10">
       {items.map((data) => {
         return (
-          <div className="imagebox overflow-hidden">
+          <div key={data.link} className="imagebox overflow-hidden">
               <a className="hover:underline" href={data.image.contextLink}>
                 <img
                   className=" shadow shadow-md w-full lg:h-60 md:h-50 sm:h-40 object-cover rounded-md"

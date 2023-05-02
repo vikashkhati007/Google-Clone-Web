@@ -13,6 +13,14 @@ const HomeBody = () => {
     router.push(`/search?query=${term.trim()}&searchType=`);
   }
 
+    async function searchrandomhandler(e) {
+    e.preventDefault();
+    const randomword = await fetch("https://random-word-api.herokuapp.com/word?number=1").then((response)=> response.json());
+    if (!randomword) return;
+    router.push(`/search?query=${randomword}&searchType=`);
+  }
+  
+
   function handleKeyPress(e) {
     if (e.key === "Enter") { // execute the searchhandler function when the "Enter" key is pressed
       searchhandler(e);
@@ -62,7 +70,7 @@ const HomeBody = () => {
             >
               Google Search
             </button>
-            <button className="googlebutton w-40 h-10 rounded-md hover:border">
+            <button onClick={searchrandomhandler} className="googlebutton w-40 h-10 rounded-md hover:border">
               I&#39;m Feeling Lucky
             </button>
           </div>

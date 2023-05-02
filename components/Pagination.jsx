@@ -9,13 +9,13 @@ const Pagination = () => {
       <div className="iconcontainer flex justify-around">
         <Link href={`/search?query=${router.query.query}&searchType=${router.query.searchType}&start=${startIndex + 10}`}>
         <div className="previouscontainer hover:underline hover:text-blue-800 decoration-blue-700">
-        <Image className="w-7" src={"/next.png"} width={20} height={20} alt="next"/>
+        <Image className="w-7 bg-white rounded-full border" src={"/next.png"} width={20} height={20} alt="next"/>
         <p className="hover:underline hover:text-blue-800 decoration-blue-700">Next</p>
         </div>
         </Link>
         {startIndex>10?<Link href={`/search?query=${router.query.query}&searchType=${router.query.searchType}&start=${startIndex - 10}`}>
         <div className="previouscontainer hover:underline hover:text-blue-800 decoration-blue-700">
-        <Image className="w-7 ml-2" src={"/previous.png"} width={20} height={20} alt="previous"/>
+        <Image className="w-7 ml-2 bg-white rounded-full border" src={"/previous.png"} width={20} height={20} alt="previous"/>
         <p >Previous</p>
         </div>
         </Link>:null}

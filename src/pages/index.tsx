@@ -1,5 +1,4 @@
 import HomeBody from "../../components/HomeBody"
-import Footer from "../../components/footer"
 import Header from "../../components/header"
 
 const Index = () => {
@@ -7,7 +6,6 @@ const Index = () => {
     <>
       <Header display="block"/>
       <HomeBody/>
-      <Footer/>
     </>
   )
 }
